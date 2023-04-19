@@ -55,13 +55,8 @@ public class PatrolBehaviourScript : MonoBehaviour
     {
         if (currentIndex==lenght-1)
         {
-            currentIndex= 0;
+            return 0;
         }
-        else if (currentIndex<lenght-1)
-        {
-            currentIndex++;
-        }
-
-        return currentIndex;
+        return currentIndex+1;
     } 
 }
